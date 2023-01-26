@@ -1,0 +1,22 @@
+p{
+    background-color: aquamarine;
+    color: hotpink;
+    border: 2px solid rebeccapurple;
+
+}
+#firstpara{
+    background-color: coral;
+    color: darkviolet;
+    border: 5px solid purple;
+}
+.first{
+    background-color: hotpink;
+    color: inherit;
+}
+footer{
+    background-color: aliceblue;
+    color: brown;
+}
+span{
+    background-position: 10px 30px;
+}
