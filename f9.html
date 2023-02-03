@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: bisque;
+            border: 2px solid black;
+            height: 5000px;
+        }
+
+        .box {
+            background-color: lavenderblush;
+            border: 3px solid red;
+            margin: 33px 33px;
+            width: 150px;
+            display: inline-block;
+
+        }
+
+        #box1 {
+            /* position relative is position relative to its normal position */
+            /* position absolute is position relative to its parent */
+            /* position: relative;
+            position: fixed;
+            right: 4px;
+            bottom: 5px; */
+
+
+        }
+
+        #box2 {
+            position:sticky;
+            top:3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit iste provident
+            accusantium, quos inventore, a repellat mollitia ipsam voluptatem eius esse quasi adipisci iusto sunt
+            officia eum beatae nihil atque autem soluta ipsa.</div>
+        <div class="box" id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit iste provident
+            accusantium, quos inventore, a repellat mollitia ipsam voluptatem eius esse quasi adipisci iusto sunt
+            officia eum beatae nihil atque autem soluta ipsa.</div>
+        <div class="box" id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit iste provident
+            accusantium, quos inventore, a repellat mollitia ipsam voluptatem eius esse quasi adipisci iusto sunt
+            officia eum beatae nihil atque autem soluta ipsa.</div>
+        <div class="box" id="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit iste provident
+            accusantium, quos inventore, a repellat mollitia ipsam voluptatem eius esse quasi adipisci iusto sunt
+            officia eum beatae nihil atque autem soluta ipsa.</div>
+    </div>
+</body>
+
+</html>
