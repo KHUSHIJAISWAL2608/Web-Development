@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            border: 3px solid rgb(111, 30, 11);
+            /* display: inline-block; */
+        }
+        #box1{
+            background-color: lavender;
+
+ z-index: 25;
+        }
+        #box2{
+            background-color: lavender;
+            position: relative;
+            top: 33px;
+            /* left: 34px; */
+            z-index: 27;
+
+        }
+        #box3{
+            background-color:red;
+              /* display: none; */
+              /* visibility: hidden; */
+              position: relative;
+              top: 2px;
+              z-index: 25;
+        }
+        #box4{
+            background-color: lavender;
+ position: relative;
+ bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="box1"></div>
+    <div class="container" id="box2"></div>
+    <div class="container" id="box3"></div>
+    <div class="container" id="box4"></div>
+</body>
+</html>
