@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            background-color: red;
+            color: white;
+            font-size: 45px;
+            text-align: center;
+            display: none;
+        }
+
+        @media only screen  (max-width:300px) {
+            #box1 {
+                display: block;
+            }
+
+        }
+
+        @media (max-width:500px) and (min-width:300px) {
+
+            #box2 {
+
+                display: block;
+                background-color: cyan;
+                color: black;
+            }
+        }
+        @media (max-width:700px) and (min-width:500px) {
+
+#box3 {
+
+    display: block;
+    background-color: lavender;
+}
+}
+@media (max-width:1000px) and (min-width:700PX) {
+
+#box4 {
+
+    display: block;
+    background-color: rgb(156, 105, 152);
+}
+}
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">My name is khushi jaiswal</div>
+    <div class="box" id="box2">My father's name is birendra kumar jaiswal</div>
+    <div class="box" id="box3">My mother's name is julee jaiswal</div>
+    <div class="box" id="box4">My brother's name is vishnu jaiswal and krishna jaiswal</div>
+</body>
+
+</html>
