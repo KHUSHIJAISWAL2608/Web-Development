@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        /* if p is contained by any li which is contained by div */
+        div p {
+            background-color: lavender;
+        }
+
+        /* if  p is right inside div then this css is applied */
+        div>p {
+            background-color: aquamarine;
+        }
+
+        /* if p is next sibling of div i.e p is right after div */
+        div+p {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <P> This is paragraph under LI</P>
+                </li>
+            </ul>
+            <p> This is first row</p>
+
+
+        </div>
+        <p> This is another paragraph</p>
+
+    </div>
+    <p>This is the third paragraph</p>
+
+</body>
+
+</html>
