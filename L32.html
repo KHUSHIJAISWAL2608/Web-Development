@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth pseudo selectors</title>
+    <style>
+        .container {
+            /* align-items: center; */
+            width: 560px;
+            display: block;
+            margin: auto;
+
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            background-color: bisque;
+            border: 2px solid skyblue;
+        }
+
+        a[target] {
+            font-size: 34px;
+            color: crimson;
+        }
+
+        a[target=_self] {
+            background-color: deeppink;
+            color: beige;
+
+        }
+
+        input[type="email"] {
+            background-color: aqua;
+        }
+
+        li:nth-child(even) {
+            background-color: chartreuse;
+            color: bisque;
+        }
+        li:nth-child(3n+0){
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Go to google</a>
+       
+            <form action="" class="form-control">
+                <input type="text" placeholder="Enter your name">
+                <input type="password" placeholder="Enter your password">
+                <input type="email" value="email">
+                <input type="submit" value="submit">
+            </form>
+        
+        <ul>
+            <li class="item" id="item-1">This is items-1 under LI</li>
+            <li class="item" id="item-2">This is items-2 under LI</li>
+            <li class="item" id="item-3">This is items-3 under LI</li>
+            <li class="item" id="item-4">This is items-4 under LllllI</li>
+            <li class="item" id="item-5">This is items-5 under LI</li>
+            <li class="item" id="item-6">This is items-6 under LllllI</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
