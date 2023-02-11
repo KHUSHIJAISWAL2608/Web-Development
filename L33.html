@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin:0px;
+            padding: 0px;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+            /* flex-direction: column; */
+            
+        }
+        li{
+            list-style: none;
+            padding: 20px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            /* margin: 3px 10px; */
+            /* color: aqua; */
+            border: 2px solid red;
+            height: 233px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 25px 140px;
+
+        }
+        section::after{
+            content: " This is a content";
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">contact us</li>
+        </ul>
+    </nav>
+    <section>
+        <H3>THIS IS HEADING</H3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea possimus, doloremque maxime esse officia obcaecati consectetur consequuntur quia sapiente odio fugiat, necessitatibus minima consequatur, vero placeat et minus quo expedita?
+    </section>
+</body>
+</html>
