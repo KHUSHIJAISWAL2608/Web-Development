@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container{
+           display: flex;
+        }
+        .box{
+            /* border: 2px solid purple; */
+            background-color: lavender;
+            padding: 20px;
+            margin: 5px 5px;
+            box-shadow: 2px 3px 13px 12PX palevioletred;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+             /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+             /* box-shadow: inset 2px 5px ; */
+             box-shadow: 2px 3px green , 4px 3px red;
+        }
+            .box h3{
+                text-shadow: -2px -2px rgb(128, 122, 122);
+            }
+        #box1{
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="box" id="box1">
+        <h3>CARD 1</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, debitis! Ut amet optio adipisci? Hic illo modi possimus maiores distinctio ex placeat natus nulla fugiat. Ipsam est veniam assumenda ratione laborum nemo, totam perspiciatis.
+
+        </p>
+    </div>
+    <div class="box" id="box2">
+        <h3>CARD 2</h3><P> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iusto doloremque repudiandae fuga enim molestiae in fugiat error laborum quos adipisci ipsam debitis accusantium dolorem esse reiciendis doloribus odio provident aliquam, laboriosam velit eius?</p>
+    </div>
+    <div class="box" id="box3"><h3>CARD 1</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quae dolor hic nemo praesentium fuga adipisci obcaecati eaque facilis. Delectus eaque libero impedit cumque veniam perferendis praesentium iusto odio, illum sequi ratione sint reprehenderit.</p></div></div>
+</body>
+
+</html>
