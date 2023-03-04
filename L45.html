@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid + Media Queries</title>
+    <style>
+        span{
+            margin: 2px 30px ;
+            font-weight: bold;
+        }
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar' 
+            'section section aside' ;
+        }
+        .bdr{
+            border:2px solid black;
+            padding: 14px;
+            background-color: rgb(156, 126, 126);
+        }
+
+        @media only screen and (max-width:700px) {
+         body{
+            background-color: yellow;   
+
+        }
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar' 
+            'section section section'
+            'aside aside aside'
+            'footer footer footer' ;
+        
+            } 
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                /* padding:  10px; */
+                /* margin: 2px 0px ; */
+            }
+    }
+        @media only screen and ( min-width:700px) and (max-width:1000px) {
+            body{
+          background-color:red; 
+            }
+    .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar' 
+            'section section section'
+            'aside aside aside'
+            'footer footer footer' ;
+        
+            } 
+
+           
+            
+        }
+        @media  (min-width:1000px )and (max-width:1700px){
+          body{  background-color:green;
+        }
+    }
+        @media (min-width:1700px) and (max-width:22000px) {
+            body{
+               background-color: violet;
+            }
+        }
+        #navbar{
+           grid-area: navbar;
+        }
+        aside{
+            grid-area: aside;
+        }
+        section{
+            grid-area: section;
+        }
+        footer{
+            grid-area: footer;
+            margin: 5px 0px;
+            text-align: center;
+            text-decoration: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar" class="bdr"> 
+             <span>Home</span>
+             <span> About us</span> 
+             <span> Services</span> 
+             <span>Contact us</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente molestias sed commodi expedita impedit, at natus doloremque id nostrum, obcaecati omnis aperiam adipisci maiores eius consectetur pariatur molestiae minima. At quos quidem cupiditate molestias!
+            </h2>
+        </section>
+        <aside class="bdr">
+            <h1>
+                More about us 
+            </h1>
+        </aside>
+    </div>
+    <footer class="bdr" id="footer">&copy;copyright made by khushi</footer>
+</body>
+</html>
