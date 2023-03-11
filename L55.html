@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+  <div class="container">
+    <p>This is loops tutorial</p>
+
+    
+  </div>  
+  <script>
+    let i=0;
+     for(i=0;i<=5;i++){
+        console.log("khushi jaiswal");
+    }
+
+    let index=['rimjhim','khushi','avinash','shubham'];
+    // for(i=0;i<index.length;i++){
+    //     console.log('hello friends '+ index[i]);
+    // }
+    index.forEach(function f(element) {
+        console.log('hello '+ element);
+        
+    });
+
+    let student={
+        Name:'Khushi jaiswal',
+        roll:2020323,
+        college:'SRCASW'
+    }
+    for(key in student) {
+        console.log(`The ${key} of student is ${student[key]}`)
+        }
+        let j=0;
+        while(j<10)
+        {
+            console.log(`${j} is less than 10`)
+            j=j++;
+        }
+  </script>
+</body>
+</html>
