@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body>
+    <div class="container" id="para">
+        <h1>This is paragraph</h1>
+       <p id="item"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vero, tempore quam obcaecati molestiae ducimus, sapiente laudantium similique amet, alias sint et voluptate velit quae. Atque officiis placeat maxime consequuntur asperiores modi iusto aliquam perferendis, reiciendis voluptas minus. Numquam culpa consequatur aliquid, omnis laborum incidunt aliquam nulla dolore quisquam illum rem modi! Cumque ratione accusamus praesentium, inventore minus molestias nostrum. Placeat error dignissimos dolorem voluptate, commodi quo, illum vero delectus alias consectetur harum. Rerum magni quam velit! Incidunt itaque veritatis, minus laboriosam velit quas aliquid accusamus neque, in, provident ad quaerat nostrum placeat consectetur repudiandae mollitia. Laboriosam, ipsum distinctio. Veniam reprehenderit consequuntur fuga nemo vel similique ut, nobis voluptatum provident. Quod perspiciatis magni, omnis quae blanditiis magnam tenetur nam? Aliquid, repudiandae! Enim temporibus consequatur voluptatum beatae maiores dolore accusamus molestias quasi labore esse!
+       </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Hide/Show</button> 
+    <script>
+        let item=document.getElementById("item");
+        item.addEventListener('mouseover',function run(){
+        //  alert('mouse inside')
+        console.log('mouse inside');
+    });
+    item.addEventListener('mouseout',function run(){ 
+        // alert('mouseoutside')
+        console.log('mouse outside');
+     });
+       function toggleHide() {
+        let btn=document.getElementById("btn");
+        let item=document.getElementById("item");
+        if (item.style.display!='none') {
+        item.style.display='none';
+        }
+        else {
+            item.style.display='block';
+        }
+       }
+    </script>
+</body>
+</html>
