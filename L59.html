@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dates</title>
+</head>
+<style>
+    .container{
+        background-color: blanchedalmond;
+        font-family: 'Times New Roman', Times, serif;
+        border: 2px solid black;
+        /* border-radius: 8px; */
+        /* align-items: center; */
+        text-align: center;
+        margin : 5px 10px ;
+        height: 50px ;
+        padding: 34px;
+
+    }
+
+</style>
+<body>
+   <div class="container">
+     Time is <span id="time"></span>
+    <!-- <p id="para"> -->
+     <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cumque incidunt harum quas provident libero repellat tempora porro ipsam saepe quisquam fuga corporis. Quo, dicta illo perspiciatis ipsam illum recusandae atque maxime assumenda. Exercitationem! -->
+    <!-- </p> -->
+   </div>
+
+   <script>
+    console.log("Dates and time");
+    // let now=new Date();
+    // console.log(now);
+    // let dt=new Date(1000);
+    // console.log(dt);
+    let dte=new Date("2024-07-15");
+    console.log(dte);
+
+    // let newDate=new Date(year, month, day, hour, min,seconds,milliseconds);
+    let newDate=new Date(2023,02,08,12,30,59);
+    console.log(newDate);
+    let yr=newDate.getFullYear();
+    console.log(yr);
+    let newMonth=newDate.getMonth();
+    console.log(newMonth);
+    let newDat=newDate.getDate();
+    console.log(newDat);
+    newDate.setDate(28);
+    newDate.setMonth(8);
+    console.log(newDate);
+
+    setInterval(updateTime,1000);
+function updateTime(){
+    time.innerHTML=new Date();
+}
+   </script> 
+</body>
+</html>
