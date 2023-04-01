@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <script>
+    let jsnObj={
+        name:"Khushi jaiswal",
+        roll:2020323,
+        course:"Bsc (h) computer science",
+        college:"SRCASW",
+            }
+            console.log(jsnObj);
+
+            let myJsonString = JSON.stringify(jsnObj);
+            console.log(myJsonString);
+            
+            myJsonString=myJsonString.replace("Khushi jaiswal","Khushi singh");
+            console.log(myJsonString);
+            newjsnObj = JSON.parse(myJsonString);
+            console.log(newjsnObj);
+</script>
+</body>
+</html>
