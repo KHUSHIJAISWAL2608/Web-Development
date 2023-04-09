@@ -1,0 +1,18 @@
+{
+  "name": "l69",
+  "version": "1.0.0",
+  "description": "This is the tutorial for npn",
+  "main": "L69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "khushi",
+  "license": "ISC",
+  "dependencies": {
+    "express": ">4.18.2",
+    "nodemon": ">2.0.20"
+  }
+}
