@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pet Form</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<div id="header">
+<center>Pet Information Form</center>
+</div>
+<form id="myform" type="post">
+<div class="blur"></div>
+<fieldset class="glass">
+<legend>Pet Details</legend>
+<p>We would love to hear about your Pet. Please fill out this
+form</p>
+<div class="elements">
+<label for="name">Name :</label>
+<input required="required" type="text" value="Bob"
+name="fname" size="20" />
+</div>
+<div class="elements">
+<label for="Age">Age :</label>
+<input required="required" type="number" value="3" id="age"
+name="age" size="10" />
+</div>
+<div class="elements">
+<label for="Weight">Weight :</label>
+<input required="required" type="number" value="10" id="weight"
+name="weight" size="10" />
+</div>
+Page | 30
+<div class="elements">
+<label for="type"> Type :</label>
+<select name="type">
+<option value="Dog" selected="selected">Dog</option>
+<option value="Cat">Cat</option>
+<option value="Bird">Bird</option>
+<option value="Fish">Fish</option>
+<option value="Rabbit">Rabbit</option>
+</select>
+</div>
+<div class="elements">
+<label for="Gender">Gender: </label>
+<input type="radio" name="gender" value="Male" checked="checked"
+id="r1"> Male
+<input type="radio" name="gender" value="Female" id="r2"> Female
+</div>
+<div class="elements">
+<label for="favoritefood">Favorite Food :</label>
+<input type="text" name="favoritefood" value="Pedigree"
+id="favfood">
+</div>
+<div class="submit">
+<input type="submit" id="btn" name="btn" class="btn"
+value="Submit" />
+</div>
+</fieldset>
+</form>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+></script>
+</body>
+</html>
