@@ -1,100 +1,113 @@
-*{
-    margin: 0;
+
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
     }
-    body{
-    background-image: url(petsbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    Page | 31
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
     }
-    form{
-    opacity: 75%;
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
     }
-    #header{
-    color: #fff;
-    font-size: x-large;
-    opacity: 75%;
-    background-color: #333;
-    padding: 10px 0px 10px 0px;
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
     }
-    #myform {
-    margin:0 auto;
-    width:500px;
-    padding:14px;
+
+    .mid {
+        display: block;
+        width: 66%;
+        margin: 26px auto;
+        /* border: 2px solid green; */
     }
-    label {
-    width: 10em;
-    float: left;
-    margin-right: 0.5em;
-    display: block;
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
     }
-    .submit {
-    float:right;
+
+    .navbar {
+        display: inline-block;
+        /* border: 5px solid  */
     }
-    input, select{
-    border-radius: 2rem;
-    border: 2px solid #88165c;
-    padding: 3px;
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
     }
-    fieldset {
-    background:#fff none repeat scroll 0 0;
-    border:2px solid #88165c;
-    border-radius: 2rem;
-    width: 450px;
-    Page | 32
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
     }
-    .blur{
-    backdrop-filter: blur(1px);
-    position: absolute;
-    height: 460px;
-    top: 70px;
-    left: -50px;
-    right: -50px;
-    bottom: -50px;
-    z-index: -2;
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
     }
-    legend {
-    color: #fff;
-    background: #333;
-    margin: 1rem;
-    border: 5px solid #333;
-    border-radius: 9px;
-    padding: 2px 6px
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 19px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        
     }
-    .elements {
-    padding:10px;
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
     }
-    p {
-    border-bottom:2px solid #88165c;
-    color:#88165c;
-    font-size:12px;
-    margin-bottom:20px;
-    padding-bottom:10px;
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
     }
-    span {
-    color:#88165c;
-    font-size:12px;
-    margin-bottom:1px;
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
     }
-    .btn{
-    padding: 4px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    line-height: 20px;
-    Page | 33
-    color: #333333;
-    text-align: center;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-    vertical-align: middle;
-    cursor: pointer;
-    color: #fff;
-    background-color: #88165c;
-    border: 2px solisd #88165c;
-    border-radius: 2rem;
+
+    .container h1 {
+        text-align: center;
     }
-    .btn:hover{
-    color: #fff;
-    background-color: #d3148a;
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
     }
-    
