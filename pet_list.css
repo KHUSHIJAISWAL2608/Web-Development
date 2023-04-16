@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    }
+    body{
+    background-attachment: fixed;
+    background-image: url(petsbg.jpg);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    Page | 36
+    }
+    #header{
+    color: #fff;
+    font-size: x-large;
+    opacity: 75%;
+    background-color: #333;
+    padding: 10px 0px 10px 0px;
+    }
+    p {
+    border-bottom:2px solid #88165c;
+    color:#88165c;
+    font-size:12px;
+    margin-bottom:20px;
+    padding-bottom:10px;
+    }
+    .container{
+    color: rgb(131, 13, 115);
+    background:#fff none repeat scroll 0 0;
+    border:2px solid #88165c;
+    border-radius: 2rem;
+    padding: 20px;
+    margin: 20px;
+    opacity: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    }
+    #content{
+    color: #fff;
+    background-color:#88165c;
+    opacity:unset;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
+    #petsInfo th{
+    border: none;
+    padding: 5px;
+    }
+    #petsInfo tr:nth-of-type(odd){
+    background-color: #d3148a;
+    }
+    #petsInfo tr:nth-of-type(even){
+    Page | 37
+    background-color: #fff;
+    color: #88165c;
+    }
+    

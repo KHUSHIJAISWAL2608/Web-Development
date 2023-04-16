@@ -1,0 +1,43 @@
+{
+    "pets": [{
+    "fname": "Bob",
+    "age": "3",
+    "weight": "10",
+    "type": "Dog",
+    "gender": "Male",
+    "favoritefood": "Pedigree"
+    },
+    {
+    "fname": "Kenny",
+    "age": "10",
+    "weight": "0.6",
+    "type": "Bird",
+    "gender": "Female",
+    "favoritefood": "Corn"
+    },
+    {
+    "fname": "Sizy",
+    "age": "5",
+    "weight": "4",
+    "type": "Cat",
+    "gender": "Male",
+    "favoritefood": "Yogurt"
+    },
+    {
+    "fname": "Keithen",
+    "age": "15",
+    "weight": "13",
+    "type": "Dog",
+    "gender": "Male",
+    "favoritefood": "Pancakes"
+    },
+    {
+    "fname": "Pitzee",
+    "age": "18",
+    "weight": "3",
+    "type": "Fish",
+    "gender": "Female",
+    "favoritefood": "Sludge worms"
+    }
+    ]
+    }
