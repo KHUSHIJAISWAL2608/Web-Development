@@ -1,100 +1,83 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     }
-    body{
-    background-image: url(petsbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    Page | 31
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .container{
+    padding: 20px;
     }
-    form{
-    opacity: 75%;
-    }
-    #header{
-    color: #fff;
-    font-size: x-large;
-    opacity: 75%;
-    background-color: #333;
-    padding: 10px 0px 10px 0px;
-    }
-    #myform {
-    margin:0 auto;
-    width:500px;
-    padding:14px;
-    }
-    label {
-    width: 10em;
-    float: left;
-    margin-right: 0.5em;
-    display: block;
-    }
-    .submit {
-    float:right;
-    }
-    input, select{
-    border-radius: 2rem;
-    border: 2px solid #88165c;
-    padding: 3px;
-    }
-    fieldset {
-    background:#fff none repeat scroll 0 0;
-    border:2px solid #88165c;
-    border-radius: 2rem;
-    width: 450px;
-    Page | 32
-    }
-    .blur{
-    backdrop-filter: blur(1px);
-    position: absolute;
-    height: 460px;
-    top: 70px;
-    left: -50px;
-    right: -50px;
-    bottom: -50px;
-    z-index: -2;
-    }
-    legend {
-    color: #fff;
-    background: #333;
-    margin: 1rem;
-    border: 5px solid #333;
-    border-radius: 9px;
-    padding: 2px 6px
-    }
-    .elements {
-    padding:10px;
-    }
-    p {
-    border-bottom:2px solid #88165c;
-    color:#88165c;
-    font-size:12px;
-    margin-bottom:20px;
-    padding-bottom:10px;
-    }
-    span {
-    color:#88165c;
-    font-size:12px;
-    margin-bottom:1px;
-    }
-    .btn{
-    padding: 4px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    line-height: 20px;
-    Page | 33
-    color: #333333;
+    header h1, h2{
+    padding: 10px;
     text-align: center;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-    vertical-align: middle;
-    cursor: pointer;
-    color: #fff;
-    background-color: #88165c;
-    border: 2px solisd #88165c;
-    border-radius: 2rem;
     }
-    .btn:hover{
-    color: #fff;
-    background-color: #d3148a;
+    .nav-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
+    .nav-wrapper ul{
+    list-style: none;
+    }
+    .navbar li{
+    float: left;
+    }
+    .navbar a {
+    text-decoration: none;
+    }
+   .nav_item{
+    padding: 10px;
+   }
+   table{
+    border: 2px solid black;
+    width: 70%;
+    align-items: center;
+    border-color: black;
+
+
+   }
+   tbody{
+    background-color: rgba();
+
+   }
+   th,td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+
+   }
+   #redesign{
+    padding: 15px;
+    font-size: medium;
+    margin: 10px;
+
+   }
+   .line{
+    display: none;
+    background: #22577AA;
+    height: 5px;
+    width:100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+   }
+   .course_header{
+    position: relative;
+    width: 100%;
+    height: 200%;
+
+   }
+   .layer{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+    opacity: 70%;
+    background-size: contain;
+   }
+    background-repeat: no-repeat;
     
+    .header_text {
+    position:absolute;
+    width:100%;
+    height:200px;
+    z-index: 2;
+    }
