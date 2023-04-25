@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+
+{{!-- Navigation links --}}
+    <nav>
+        <h4>Node MySQL Login</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    {{!-- Body of each page will go here --}}
+</body>
+</html>
+In the head section, we linked the two link elements to our custom style sheet and the Bootstrap CSS library. We also created a navigation menu that will be reused across all pages to include links to the login and register pages.
+
+Styling the login form with CSS
+The frontend of this application will be styled using the Bootstrap CSS library, which we linked in the head section of our markup. Styling will be applied to all elements via Bootstrap classes, such as m-5, p-5, text-white, and so on. Next, inside index.hbs, use the following markup within the <body> tags to add a jumbotron to your website’s homepage:
+
+    {{!-- Body --}}
+    <div class="container mt-4">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>My Login Project</h1>
+            <p>This project demonstrates how to implement login and register functionalities with Node.js and MySQL </p>
+        </div>
+    </div>
